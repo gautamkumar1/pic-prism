@@ -5,12 +5,14 @@ import Login from './pages/Login'
 import Signup from './pages/Signup'
 import SellerDashboard from './pages/SellerDashboard'
 import BuyerDashboard from './pages/BuyerDashboard'
+import Navbar from './components/Navbar'
 function App() {
   
 
   return (
     <>
       <BrowserRouter>
+      <Navbar/>
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/login' element={<Login/>}/>
